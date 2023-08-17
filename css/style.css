@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e364a;
+}
+body .timeline {
+  max-width: 1200px;
+  position: relative;
+  margin: 100px auto;
+}
+body .timeline .container {
+  opacity: 0;
+  width: 50%;
+  padding: 10px 50px;
+  position: relative;
+  animation: movedown 1s linear forwards;
+}
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+body .timeline .container img {
+  top: 32px;
+  z-index: 10;
+  width: 40px;
+  right: -20px;
+  position: absolute;
+}
+body .timeline .container .text__box {
+  font-size: 15px;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+body .timeline .container .text__box h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+body .timeline .container .text__box small {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.timeline::after {
+  top: 0;
+  left: 50%;
+  width: 6px;
+  z-index: -1;
+  height: 100%;
+  content: " ";
+  margin-left: -3px;
+  position: absolute;
+  background-color: #ffffff;
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.container__left {
+  left: 0px;
+}
+.container__left .arrow {
+  top: 28px;
+  width: 0px;
+  height: 0px;
+  right: -15px;
+  position: absolute;
+  border-left: 15px solid #ffffff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.container__right {
+  left: 50%;
+}
+.container__right img {
+  left: -20px;
+}
+.container__right .arrow {
+  top: 28px;
+  width: 0px;
+  height: 0px;
+  left: -15px;
+  position: absolute;
+  border-right: 15px solid #ffffff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.containerOne {
+  animation-delay: 0s !important;
+}
+
+.containerTwo {
+  animation-delay: 1s !important;
+}
+
+.containerThree {
+  animation-delay: 2s !important;
+}
+
+.containerFour {
+  animation-delay: 3s !important;
+}
+
+.containerFive {
+  animation-delay: 4s !important;
+}
+
+.containerSix {
+  animation-delay: 5s !important;
+}/*# sourceMappingURL=style.css.map */
